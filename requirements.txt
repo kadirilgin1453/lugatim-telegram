@@ -1,4 +1,7 @@
+setuptools
+wheel
 rich
-requests
-beautifulsoup4
-lxml
+Kekik
+pydantic
+httpx
+parsel
