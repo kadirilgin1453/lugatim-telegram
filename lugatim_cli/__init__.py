@@ -22,9 +22,7 @@ argumanlar.add_argument(
 def basla():
     args = argumanlar.parse_args()
 
-    arama_metni = " ".join(args.kelime)
-    lugat = Lugatim()
-    if not arama_metni:
-        return konsol.print("[bold red]Lütfen Kelime veya Kelime Grubu Girin..")
+    if arama_metni := " ".join(args.kelime):
+        return Lugatim().tablo(arama_metni, args.tum)
 
-    lugat.tablo(arama_metni, args.tum)
+    return konsol.print("[bold red]Lütfen Kelime veya Kelime Grubu Girin..")

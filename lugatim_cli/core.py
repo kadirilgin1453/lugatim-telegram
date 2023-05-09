@@ -34,7 +34,7 @@ class Lugatim:
         self.url = "http://lugatim.com"
         self.oturum.get(self.url)
 
-    def arama_yap(self, kelime:str) -> list(SozlukAnlam):
+    def arama_yap(self, kelime:str) -> list[SozlukAnlam]:
         istek  = self.oturum.get(f"{self.url}/s/{quote(kelime)}")
         secici = Selector(istek.text)
 
