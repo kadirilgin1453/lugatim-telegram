@@ -7,7 +7,11 @@ from Telegram import konsol
 
 @Client.on_message(filters.command(["kelimeara"], ["!", ".", "/"]))
 async def kelime_ara(client: Client, message: Message):
-    aranacak_kelime = message.text.split(" ")[1]
+    aranacak_kelime = message.text.split(" ")
+    if len(aranacak_kelime) < 2:
+        await message.reply("**⚠️ Lütfen bir kelime yazınız.**")
+        return
+    aranacak_kelime = aranacak_kelime[1]
     konsol.log(f"[bold green]Sorgulanan Kelime[/]: [bold purple]{aranacak_kelime}")
     lugat = Lugatim()
     kelimeLugatleri = lugat.arama_yap(aranacak_kelime)
