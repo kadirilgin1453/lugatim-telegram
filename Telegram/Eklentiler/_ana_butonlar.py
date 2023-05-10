@@ -1,7 +1,7 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
 from pyrogram import Client, filters
-from pyrogram.types import Message, CallbackQuery
+from pyrogram.types import Message
 
 # Ana Butonlar
 start_mesajı = "** Botu /kelimeara aranacak_kelime Şeklinde Kullanmaya Başlayabilirsiniz**"

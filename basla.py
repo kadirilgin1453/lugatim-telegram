@@ -1,7 +1,3 @@
-# Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
-
-from os import system
-
 # system("pip install -r requirements.txt")
 from Telegram import LugatimBot, baslangic, tum_eklentiler, bilgi
 

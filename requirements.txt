@@ -1,0 +1,11 @@
+desktop_notifier
+httpx
+notify-py
+parsel
+pydantic
+pyfiglet
+Pyrogram
+python-dotenv
+pytz
+Requests
+rich

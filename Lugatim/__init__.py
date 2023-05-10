@@ -1,6 +1,4 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
-
-from Kekik.cli    import konsol
 from httpx        import Client as Session
 from httpx        import Timeout
 from urllib.parse import quote
