@@ -1,5 +1,3 @@
 # Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 
-from . import basla
-
-basla()
+find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf

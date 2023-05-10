@@ -1,5 +1,5 @@
-### Temize geçilmiştir
+### Telegrama Entegre Edilmiştir.
 
 ```bash
-python -m lugatim_cli kürek
+python3 basla.py
 ```

@@ -1,7 +1,0 @@
-setuptools
-wheel
-rich
-Kekik
-pydantic
-httpx
-parsel
