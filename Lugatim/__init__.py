@@ -48,20 +48,3 @@ class Lugatim:
             )
                 for sonuc in secici.xpath("//div[@id='sonuc-left']/div[@class='search-results-div']")
         ]
-
-    def tablo(self, kelime:str, tum_sonuclar:bool=False):
-        for sonuc in self.arama_yap(kelime):
-            konsol.print()
-
-            tablo = Table(
-                title = f"[link={self.url}/s/{quote(sonuc.kelime)}]{sonuc.kelime} » Kubbealtı Lugatı[/link]",
-                box   = box.SQUARE
-            )
-            tablo.add_column(sonuc.kelime)
-            tablo.add_row(sonuc.anlam)
-            konsol.print(tablo)
-
-            if not tum_sonuclar:
-                break
-
-            konsol.print()
